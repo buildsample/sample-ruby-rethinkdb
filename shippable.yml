@@ -2,12 +2,16 @@ language: ruby
 
 rvm:
   - 1.9.3
-  - 1.9.2
+ # - 1.9.2
  
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 
 archive: true
+
+before_install:
+#- source /home/shippable/.rvm/scripts/rvm
+- source ~/.rvm/scripts/rvm && rvm use 1.9.3
 
 before_script:
   - ruby initialize.rb
