@@ -30,6 +30,7 @@ after_script:
 
 after_success:
 - echo "success"
+
 after_failure:
 - echo "failed"
 
