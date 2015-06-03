@@ -10,7 +10,7 @@ class Sample
     r.db('test').table_create('table').run
 
     r.table("table").insert({
-        :id => 1,
+        :id => 2,
         :title => "Lorem ipsum",
         :content => "Dolor sit amet"
     }).run
