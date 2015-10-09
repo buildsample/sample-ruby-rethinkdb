@@ -20,6 +20,7 @@ before_script:
 services:
   - rethinkdb
 
+
 notifications:
      email:
          recipients:
