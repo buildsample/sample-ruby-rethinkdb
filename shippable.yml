@@ -26,6 +26,8 @@ notifications:
          recipients:
              - vidya@shippable.com
              - buildsampletest@gmail.com
+         on_success: always
+         on_failure: always
 after_script:
   - cp README.md ./shippable
 
